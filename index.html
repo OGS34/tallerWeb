@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de pensión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="contenedor-main">
+        <section class="contenedor-form">
+            <section class="radio-group">
+                <section class="Select-gen1">
+                    <p class="genero1">Hombre</p>
+                    <input type="radio" name="sexo" value="hombre">
+                    <span class="radio-custom"></span>   
+                </section>
+                <section class="Select-gen2">
+                    <p class="genero2">Mujer</p>
+                    <input type="radio" name="sexo" value="mujer">
+                    <span class="radio-custom"></span>   
+                </section>
+            </section>
+            <section class="Q1">
+                <a>¿Cuántos años tienes?</a>
+                <section class="contenedorNaci">
+                    <input type="text" id="fechaNacimiento" name="fechaNacimiento" maxlength="2">
+                </section>
+            </section>
+            <section class="Q2">
+                <section class="ingreso">
+                    <a>Ingreso mensual</a>                
+                    <div class="Sol">  
+                        <p>S/</p>
+                        <input type="text" id="inputSaldoActual" name="inputSaldoActual">
+                    </div>
+                    <a>Saldo sin descuentos</a>
+                </section>
+                <section class="saldo">
+                    <a>Saldo actual en tu fondo</a>                
+                    <div class="Sol">  
+                        <p>S/</p>
+                        <input type="text" id="inputSaldoActual2" name="inputSaldoActual2">
+                    </div>
+                </section>
+            </section>
+            <section class="btn" id="calcularBtn">
+                <p>Calcular pensión</p>
+            </section>
+        </section>
+        <section class="contenedor-result">
+            <p>Pensión estimada</p>
+            <p class="pensionEstimada" id="pensionEstimada"></p>
+            <p>Fondo estimado</p>
+            <p class="fondoEstimado" id="fondoEstimado"></p>
+            <p>Saldo actual en tu fondo</p>
+            <p class="saldoActual" id="saldoActual"></p>    
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

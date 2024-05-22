@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="calculator bg-white p-6 rounded-lg shadow-lg">
+        <input type="text" id="result" value="0" readonly class="w-full mb-4 px-3 py-2 text-right text-lg rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
+        <div class="grid grid-cols-4 gap-3">
+            <button class="button number" onclick="appendToResult('7')">7</button>
+            <button class="button number" onclick="appendToResult('8')">8</button>
+            <button class="button number" onclick="appendToResult('9')">9</button>
+            <button class="button operator" onclick="appendToResult('/')">/</button>
+            <button class="button number" onclick="appendToResult('4')">4</button>
+            <button class="button number" onclick="appendToResult('5')">5</button>
+            <button class="button number" onclick="appendToResult('6')">6</button>
+            <button class="button operator" onclick="appendToResult('*')">*</button>
+            <button class="button number" onclick="appendToResult('1')">1</button>
+            <button class="button number" onclick="appendToResult('2')">2</button>
+            <button class="button number" onclick="appendToResult('3')">3</button>
+            <button class="button operator" onclick="appendToResult('-')">-</button>
+            <button class="button number" onclick="appendToResult('0')">0</button>
+            <button class="button operator" onclick="appendToResult('.')">.</button>
+            <button class="button operator" onclick="appendToResult('+')">+</button>
+            <button class="button function" onclick="applyFunction('Math.sin')">sen</button>
+            <button class="button function" onclick="applyFunction('Math.cos')">cos</button>
+            <button class="button function" onclick="applyFunction('Math.tan')">tan</button>
+            <button class="button function" onclick="applyFunction('Math.sqrt')">√</button>
+            <button class="button function" onclick="applyFunction('Math.pow')">^</button>
+            <button class="button function" onclick="applyFunction('Math.log')">log</button>
+            <button class="button function" onclick="applyFunction('Math.exp')">exp</button>
+            <button class="button calculate" onclick="calculate()">=</button>
+            <button class="button clear" onclick="clearResult()">CA</button>
+        </div>
+        <button id="btnShowPrevious" class="show-previous block w-full px-3 py-2 mt-4 text-lg text-white bg-blue-500 rounded-md focus:outline-none focus:bg-blue-600">Operación Anterior</button>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
