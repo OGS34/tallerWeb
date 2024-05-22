@@ -1,0 +1,212 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-main {
+    width: 975px;
+    height: 456px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #2214ee;
+    display: flex;      
+}
+/* Estilos para el contenedor de formulario */
+.contenedor-form {
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 110px;
+}
+.radio-group {
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupa todo el ancho del contenedor-form */
+}
+
+.Select-gen1 {
+    display: flex;
+    height: 41px;
+    border: 1px solid #B0B0B0;
+    border-radius: 6px;
+    width: 192px; 
+    box-sizing: border-box;
+    justify-content: center;
+    
+}
+.Select-gen2 {
+    margin-left: 43px;
+    display: flex;
+    height: 43px;
+    border: 1px solid #B0B0B0;
+    border-radius: 6px;
+    width: 192px; 
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.genero1{
+    margin-top: 8px;
+    font-family: Calibri;
+    padding-left: 12px;
+    padding-right: 90px;   
+}
+.genero2{
+    margin-top: 8px;
+    font-family: Calibri;
+    padding-left: 12px;
+    padding-right: 103px;
+}
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B0B0B0;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border-color: red;
+    background-color: red;
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Q1{
+    padding-top: 23px;
+}
+a{
+    font-size: 14px;
+    font-family: Calibri;
+}
+.contenedorNaci {
+    width: 425px;
+    height: 43px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 6px;
+}
+
+.contenedorNaci input[type="text"] {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    background: none; 
+    font-family: inherit; 
+    font-size: inherit; 
+    padding: 0; 
+    box-sizing: border-box; 
+    
+}
+.contenedorNaci input[type="text"]:focus {
+    outline: none; 
+.Q2 {
+    padding-top: 26px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.ingreso, .saldo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ingreso a, .saldo a {
+    text-align: left; 
+    margin-bottom: 5px; 
+}
+.Sol {
+    display: flex;
+    align-items: center; 
+    width: 191px; 
+    height: 44px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+}
+
+
+
+.ingreso .Sol p, .saldo .Sol p {
+    margin-right: 5px; 
+}
+
+.ingreso .Sol input[type="text"], .saldo .Sol input[type="text"] {
+    border: none; 
+    background: none; 
+    font-family: inherit; 
+    font-size: inherit; 
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none;     
+}
+
+.btn {
+    margin-top: 33px;
+    width: 223px; 
+    height: 44px; 
+    background-color: rgb(255, 0, 0); 
+    border-radius: 6px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+}
+
+.btn p {
+    font-size: 18px; 
+    color: white; 
+    margin: 0; 
+    font-family: emeric, sans-serif; 
+}
+
+.contenedor-result {
+    width: 440px; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    box-sizing: border-box;
+    padding-left: px;
+}
+.contenedor-result a{
+    font-size: 16px;
+    font-family: Calibri;
+}
+.pensionEstimada {
+    font-size: 36px;
+    font-family: Rozanova;
+    font-weight: bolder;
+}
+.fondoEstimado {
+    font-size: 24px;
+    font-family: Rozanova;
+    font-weight: bolder;
+}
+.saldoActual {
+    font-size: 24px;
+    font-family: Rozanova;
+    font-weight: bolder;
+}
+
